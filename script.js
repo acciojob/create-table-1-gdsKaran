@@ -5,10 +5,10 @@ function insert_Row() {
 	const nCol = document.createElement("td");
 	const nCol2 = document.createElement("td");
 
-	nCol.textContent = `New Cell1`;
-	nCol2.textContent = `New Cell2`;
+	nCol.textContent = "New Cell1";
+	nCol2.textContent = "New Cell2";
 
 	nRow.appendChild(nCol);
 	nRow.appendChild(nCol2);
-	table.insertBefore(nRow, table.firstChild);
+	table.insertBefore(nRow, table.rows[0]);
 }
